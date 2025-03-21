@@ -9,7 +9,7 @@ require("dotenv").config();
 
 const app = express();
 const mongoString = process.env.MOGODB_CONNECTION_STRING;
-
+console.log(mongoString,"mongostrig")
 app.use(cors());
 app.use(express.json());
 app.use("/api", registerRoute);
